@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "moncy-portfolio",
+      "name": "portfolio",
       "dependencies": {
         "@gsap/react": "^2.1.1",
         "@react-three/cannon": "^6.6.0",
