@@ -1,0 +1,125 @@
+.techstack-section {
+  width: var(--cWidth);
+  max-width: 1400px;
+  margin: 260px auto 140px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.techstack-shell {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(circle at top right, rgba(164, 103, 255, 0.18), transparent 26%),
+    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.06), transparent 24%),
+    rgba(15, 10, 18, 0.92);
+  border-radius: 28px;
+  padding: 38px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+}
+
+.techstack-heading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.techstack-eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--accentColor);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.techstack-heading h2 {
+  margin: 0 0 14px;
+  font-size: clamp(40px, 5vw, 68px);
+  line-height: 0.95;
+  font-weight: 600;
+}
+
+.techstack-heading p {
+  margin: 0;
+  max-width: 680px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(234, 229, 236, 0.78);
+}
+
+.techstack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.tech-card {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 24px;
+}
+
+.tech-card-wide {
+  grid-column: 1 / -1;
+}
+
+.tech-card h3 {
+  margin: 0 0 16px;
+  font-size: 27px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f2ebff;
+  background: rgba(194, 164, 255, 0.14);
+  border: 1px solid rgba(194, 164, 255, 0.3);
+}
+
+@media only screen and (max-width: 1024px) {
+  .techstack-section {
+    margin: 100px auto 100px;
+  }
+
+  .techstack-shell {
+    padding: 28px 24px;
+  }
+
+  .techstack-heading p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .techstack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-card-wide {
+    grid-column: auto;
+  }
+
+  .tech-card h3 {
+    font-size: 24px;
+  }
+
+  .tech-pill {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
