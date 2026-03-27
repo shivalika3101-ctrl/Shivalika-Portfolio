@@ -38,6 +38,18 @@ a.contact-social {
 .contact-box h2 > span {
   color: var(--accentColor);
 }
+.contact-credit-box {
+  align-items: flex-start;
+}
+.contact-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 18px 0 14px;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
 .contact-box h5 {
   font-size: 20px;
   font-weight: 500;

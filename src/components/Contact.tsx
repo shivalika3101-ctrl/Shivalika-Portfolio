@@ -1,7 +1,5 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
-
 import "./styles/Contact.css";
-
 const Contact = () => {
   return (
     <div className="contact-section section-container" id="contact">
@@ -43,10 +41,15 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
           </div>
-          <div className="contact-box">
+          <div className="contact-box contact-credit-box">
             <h2>
               Designed and Developed <br /> by <span>Shivalika Karan Bora</span>
             </h2>
+            <img
+              src="/images/me.jpeg"
+              alt="Shivalika Karan Bora"
+              className="contact-photo"
+            />
             <h5>
               <MdCopyright /> 2025
             </h5>
@@ -56,5 +59,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;
